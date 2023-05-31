@@ -13,5 +13,5 @@ type UserRegistration struct {
 	Password   string         `json:"password,omitempty" gorm:"not_null" validate:"required,min=8"`
 	Created_At time.Time      `json:"created_at"`
 	Updated_At time.Time      `json:"updated_at"`
-	Deleted_At gorm.DeletedAt `json:"-"`
+	Deleted_At gorm.DeletedAt `json:"deleted_at"`
 }
